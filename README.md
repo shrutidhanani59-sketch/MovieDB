@@ -34,10 +34,8 @@ MovieDB
 
 ## 🧧 imges
 
-![img1](./Screenshort1.png)
-![img2](./Screenshort2.png)
-![img3](./Screenshort3.png)
-![img4](./Screenshort4.png)
-![img5](./Screenshort5.png)
+![img1](./Screenshot1.png)
+
+![img2](./Screenshot2.png)
 
 
