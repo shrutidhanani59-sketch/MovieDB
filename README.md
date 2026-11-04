@@ -38,4 +38,14 @@ MovieDB
 
 ![img2](./Screenshot2.png)
 
+![img3](./Screenshot3.png)
+
+![img4](./Screenshot4.png)
+
+![img5](./Screenshot5.png)
+
+## 📸 video
+
+https://drive.google.com/file/d/13li1Mkw4U45vFBmpjN3TPTPmYbLf2gmD/view?usp=sharing
+
 

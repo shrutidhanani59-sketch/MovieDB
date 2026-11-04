@@ -29,6 +29,8 @@ app.get("/", (req, res) => {
         data: movie
     })
 })
+
+
 //  Add Movie
 
 app.post("/addmovie", async (req, res) => {
@@ -78,6 +80,7 @@ app.put("/updatemovie", async (req, res) => {
             msg: "Movie not found"
         })
     }
+    
     res.json({
         msg: "movie update",
         data: updatemovie
