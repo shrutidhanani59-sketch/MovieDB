@@ -24,17 +24,20 @@ A MovieDB built using **Node.js, Express.js, MongoDB, and Mongoose**. This proje
 
 MovieDB
 
-   node_modules/
-   package.json
-   package-lock.json
-   server.js
+      node_modules/
+
+      package.json
+
+      package-lock.json
+
+      server.js
 
 ## 🧧 imges
 
-![img1](Screenshort1.png)
-![img2](Screenshort2.png)
-![img3](Screenshort3.png)
-![img4](Screenshort4.png)
-![img5](Screenshort5.png)
+![img1](./Screenshort1.png)
+![img2](./Screenshort2.png)
+![img3](./Screenshort3.png)
+![img4](./Screenshort4.png)
+![img5](./Screenshort5.png)
 
 
