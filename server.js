@@ -57,7 +57,7 @@ app.get("/getmovie", async (req, res) => {
 // Get specific data
 
 app.get("/specificmovie", async (req, res) => {
-    const onemovie = await movie.findById(req.body.id);
+    const onemovie = await movie.findOne(req.body.title);
 
     if (!onemovie) {
         res.json({
