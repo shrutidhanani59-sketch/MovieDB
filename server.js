@@ -1,9 +1,10 @@
-import express from "express"
-import mongoose from "mongoose"
+import express from "express";
+import mongoose from "mongoose";
 
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 
 mongoose.connect("mongodb://127.0.0.1:27017/movie").then(() => {
     console.log("Sucess");
@@ -27,8 +28,8 @@ app.get("/", (req, res) => {
     res.json({
         msg: "Home Page",
         data: movie
-    })
-})
+    });
+});
 
 
 //  Add Movie
@@ -39,8 +40,8 @@ app.post("/addmovie", async (req, res) => {
     res.json({
         msg: "movie add",
         data: addMovie
-    })
-})
+    });
+});
 
 // Get All Data
 
@@ -50,25 +51,25 @@ app.get("/getmovie", async (req, res) => {
     res.json({
         msg: "movie find",
         data: getdata
-    })
+    });
 
-})
+});
 
 // Get specific data
 
 app.get("/specificmovie", async (req, res) => {
-    const onemovie = await movie.findOne(req.body.title);
+    const onemovie = await movie.findOne({ title: req.body.title });
 
     if (!onemovie) {
         res.json({
             msg: "Movie not found"
-        })
+        });
     }
     res.json({
         msg: "movie find",
         data: onemovie
-    })
-})
+    });
+});
 
 //  update specific movie
 
@@ -78,15 +79,15 @@ app.put("/updatemovie", async (req, res) => {
     if (!updatemovie) {
         res.json({
             msg: "Movie not found"
-        })
+        });
     }
     
     res.json({
         msg: "movie update",
         data: updatemovie
-    })
+    });
 
-})
+});
 
 // delet movie
 
@@ -96,12 +97,12 @@ app.delete("/deletemovie" , async (req , res)=>{
      if (!delet) {
         res.json({
             msg: "Movie not found"
-        })
+        });
     }
     res.json({
         msg: "movie delete",
         data: delet
-    })
+    });
 
 })
 
